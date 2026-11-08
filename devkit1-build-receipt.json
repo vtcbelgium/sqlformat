@@ -1,17 +1,64 @@
 {
   "blueprint": {
     "status": "COMPLETED",
-    "registered": true,
+    "registered": false,
     "blueprint_path": "C:\\OTHRYS\\repos\\OTHRYS\\blueprints\\sites\\sqlformat.json",
     "siteId": "sqlformat"
   },
   "scaffold": {
     "status": "COMPLETED",
     "repo_dir": "C:\\OTHRYS\\repos\\sqlformat",
-    "files_count": 17
+    "files_count": 3185
   },
   "cognitive_synthesize": {
-    "status": "ERROR",
-    "error": "SYNTHESIS_FAILED_CLOSED: Cognitive self-healing loop exhausted 8 attempts. Last error:\nVitest error:\n\n RUN  v2.1.9 C:/OTHRYS/repos/sqlformat\n\n \u2713 tests/site.test.ts (4 tests) 3ms\n \u276f tests/tool.test.ts (5 tests | 2 failed) 6ms\n   \u00d7 SQL Formatter > formats a simple SELECT query 4ms\n     \u2192 expected 'SELECT\\nid,\\nnameFROM\\nusersWHERE\\nac\u2026' to contain 'id, name'\n   \u00d7 SQL Formatter > handles nested subqueries with indentation 1ms\n     \u2192 expected 'SELECT\\n*FROM\\n(SELECT\\nidFROM\\nusers\u2026' to match /\\n\\s+SELECT/\n\n Test Files  1 failed | 1 passed (2)\n      Tests  2 failed | 7 passed (9)\n   Start at  22:37:45\n   Duration  4.76s (transform 39ms, setup 0ms, collect 63ms, tests 9ms, environment 532ms, prepare 98ms)\n\n\u23af\u23af\u23af\u23af\u23af\u23af\u23af Failed Tests 2 \u23af\u23af\u23af\u23af\u23af\u23af\u23af\n\n FAIL  tests/tool.test.ts > SQL Formatter > formats a simple SELECT query\nAssertionError: expected 'SELECT\\nid,\\nnameFROM\\nusersWHERE\\nac\u2026' to contain 'id, name'\n\n- Expected\n+ Received\n\n- id, name\n+ SELECT\n+ id,\n+ nameFROM\n+ usersWHERE\n+ active=true;\n\n \u276f tests/tool.test.ts:12:25\n     10|     expect(result.data).toContain('FROM');\n     11|     expect(result.data).toContain('WHERE');\n     12|     expect(result.data).toContain('id, name');\n       |                         ^\n     13|     expect(result.data).toContain('users');\n     14|     expect(result.data).toContain('active = true');\n\n\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af[1/2]\u23af\n\n FAIL  tests/tool.test.ts > SQL Formatter > handles nested subqueries with indentation\nAssertionError: expected 'SELECT\\n*FROM\\n(SELECT\\nidFROM\\nusers\u2026' to match /\\n\\s+SELECT/\n\n- Expected: \n/\\n\\s+SELECT/\n\n+ Received: \n\"SELECT\n*FROM\n(SELECT\nidFROM\nusersWHERE\nactive=true)ASsub;\"\n\n \u276f tests/tool.test.ts:32:25\n     30|     expect(result.success).toBe(true);\n     31|     // Check that there is indentation for subquery\n     32|     expect(result.data).toMatch(/\\n\\s+SELECT/);\n       |                         ^\n     33|     expect(result.data).toMatch(/\\n\\s+FROM/);\n     34|   });\n\n\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af[2/2]\u23af\n\n"
+    "status": "ALREADY_SYNTHESIZED",
+    "tool_file": "C:\\OTHRYS\\repos\\sqlformat\\src\\tool.ts",
+    "test_file": "C:\\OTHRYS\\repos\\sqlformat\\tests\\tool.test.ts",
+    "main_file": "C:\\OTHRYS\\repos\\sqlformat\\src\\main.ts"
+  },
+  "seo": {
+    "status": "COMPLETED",
+    "robots_txt": true,
+    "sitemap_xml": true,
+    "og_image_svg": true
+  },
+  "optimize": {
+    "status": "OPTIMIZED",
+    "mandatory_section": "fine-tuning and optimization",
+    "passed_gates": [
+      "gate_header_sovereign_signature",
+      "gate_typography_hierarchy",
+      "gate_accessibility_dialogs",
+      "gate_zero_tracking_security",
+      "gate_design_tokens"
+    ],
+    "target": "C:\\OTHRYS\\repos\\sqlformat"
+  },
+  "verify_build": {
+    "status": "COMPLETED",
+    "tests_passed": true,
+    "build_succeeded": true,
+    "dist_compiled": true,
+    "test_output": "[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m9 passed\u001b[39m\u001b[22m\u001b[90m (9)\u001b[39m\n\u001b[2m   Start at \u001b[22m 22:41:09\n\u001b[2m   Duration \u001b[22m 4.02s\u001b[2m (transform 60ms, setup 0ms, collect 69ms, tests 5ms, environment 541ms, prepare 96ms)\u001b[22m\n\n"
+  },
+  "git_publish": {
+    "status": "COMPLETED",
+    "repo": "vtcbelgium/sqlformat",
+    "gh_authenticated": true
+  },
+  "cloudflare_deploy": {
+    "status": "COMPLETED",
+    "pages_host": "5569bee3.sqlformat-dj9.pages.dev",
+    "deployed": true
+  },
+  "dns_domain": {
+    "status": "COMPLETED",
+    "dns_provisioned": true,
+    "edge_verified_live": false,
+    "live_url": "https://sqlformat.othrys.be/"
+  },
+  "fleet_register": {
+    "status": "COMPLETED",
+    "fleet_file": "C:\\OTHRYS\\repos\\othrys-web\\lib\\sites.ts"
   }
 }
