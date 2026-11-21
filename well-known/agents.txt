@@ -1,0 +1,7 @@
+Name: SQL Formatter & Dialect Beautifier
+URL: https://sqlformat.othrys.be/
+Description: A web-based tool for formatting and beautifying SQL code across multiple database dialects. Formats SQL queries with proper indentation, line breaks, and syntax highlighting for improved readability.
+LLMs-Txt: https://sqlformat.othrys.be/.well-known/agents.txt
+Sitemap: https://sqlformat.othrys.be/sitemap.xml
+Protocol: public-read-only
+Privacy: zero-tracking-cookies, local-browser-execution, zero-cloud-uploads
