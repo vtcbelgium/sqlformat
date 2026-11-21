@@ -1,0 +1,7 @@
+Name: SQL Formatter & Dialect Beautifier
+URL: https://sqlformat.othrys.be/
+Description: In-browser SQL formatter and dialect beautifier for formatting database queries locally with zero server uploads.
+LLMs-Txt: https://sqlformat.othrys.be/llms.txt
+Sitemap: https://sqlformat.othrys.be/sitemap.xml
+Protocol: public-read-only
+Privacy: zero-tracking-cookies, local-browser-execution, zero-cloud-uploads
